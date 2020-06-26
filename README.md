@@ -31,11 +31,11 @@ This exercise is designed to examine your ability to;
 * We are not assessing your ability to turn this around quickly - we all have lives and jobs to attend to.
 * When submitting the PR, commentary is appreciated.
 * You may create and use a database for this process if you feel it is necessary.
+* For any area you choose to skip, or cannot complete, describe what you would do using psuedocode or comments in it's place
 
 ## Key outputs
 
 * A data transfer process that handles failure
 * An efficient data transformation process
-* Clearly 
 * Tests that run
 
