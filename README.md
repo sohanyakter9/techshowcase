@@ -5,7 +5,6 @@
 This exercise is designed to examine your ability to;
 
 * Understand key requirements
-* Adapt to an unfamiliar environment
 * Utilise third party libraries
 * Implement effective tests
 
