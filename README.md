@@ -38,3 +38,42 @@ This exercise is designed to examine your ability to;
 * An efficient data transformation process
 * Tests that run
 
+# Guideline From Sohany
+
+## Laravel Documentation
+https://laravel.com/docs/7.x
+
+### Installation ###
+
+Note that, The whole process below will take around 15-30 minutes to setup. 
+* type `git clone https://github.com/sohanyakter9/techshowcase.git projectname` to clone the repository 
+* type `cd projectname`
+* type `composer install`
+* type `composer update`
+* copy *.env.example* to *.env*
+* type `php artisan key:generate`to generate secure key in *.env* file
+* change MySQL DB configs in *.env* file :
+   * set DB_CONNECTION
+   * set DB_DATABASE
+   * set DB_USERNAME
+   * set DB_PASSWORD
+* type `php artisan migrate --seed` to create and populate tables
+* type `php artisan serve`to run the server. This will show the url where you can access the site you just setup.
+
+#### Test
+* You type and run `php artisan tinker` in your project root directory.
+* type and run `DB::statement('create database test;');` to create a test database.
+* type `./vendor/bin/phpunit tests/Feature/SchoolsControllerTest.php` to run the test.
+
+### License ###
+This example for Laravel is open-sourced software licensed under the MIT license. The example is a copy of https://github.com/bestmomo/laravel5-5-example
+
+### Note
+1. Developed the functionality to store the data into database from json using laravel.
+2. Prepared frontend to display the information in a meaningfull way.
+3. Display data based on year (when you choose the specific year and submit the form then it will not appear the older data from the specified year).
+4. Developed a test function to check the models and controller are working succesfully.
+
+Note: 
+* Due to large volume of data, we can use cron job to insert query data to tables in a chunk records
+* One task wasn't clear to me so I couldn't finish the task (Add a method that allows a user to view information about the dataset, (eg; when it was last downloaded, how many records, etc).) 
